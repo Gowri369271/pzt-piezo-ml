@@ -25,7 +25,9 @@ Open `notebooks/pzt_ml_pipeline.ipynb` in Google Colab, or:
 Results on the 70-row dataset
 
 Model ranking: this mostly matches the paper. SVR is best for voltage, power and power density, and GBR is best for eigenfrequency. RF is weakest on eigenfrequency.
+
 SHAP: a/b clearly dominates for voltage (3.9 vs 1.7) and eigenfrequency (29 vs 15), as the paper found. Power density ranks a/b above coverage, so I’d treat it as mixed. For power, coverage comes out slightly above a/b, whereas the paper has a/b first.
+
 Instability: with a 14-row test set, repeated CV gives power density R² of 0.935 ± 0.06. Treat the test-set R² values as optimistic.
 
 ## Known limitations
