@@ -1,4 +1,4 @@
-# ===================== MODEL ACCURACY TEST (run after the training cells) =====================
+# ===================== MODEL ACCURACY TEST =====================
 import numpy as np, pandas as pd, matplotlib.pyplot as plt
 from sklearn.base import clone
 from sklearn.model_selection import LeaveOneGroupOut, cross_val_predict
